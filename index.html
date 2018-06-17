@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Vue Simple Tasker</title>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+
+  <div id='wrap'>
+    <ol>
+      <li v-for="task in todos">
+        {{ task.text }}
+      </li>
+    </ol>
+    <input type="text" id="inp"><button v-on:click="addTask">Добавить</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+
+  </body>
+</html>
